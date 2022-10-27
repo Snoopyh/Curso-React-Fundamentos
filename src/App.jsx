@@ -1,18 +1,26 @@
 import React from "react";
 import "./App.css";
 
+import ListaAluno from "./componets/repetição/ListaAluno";
 import Familia from "./componets/basicos/Familia";
 import FamiliaMembro from "./componets/basicos/FamiliaMembro";
 import NumAleatorio from "./componets/basicos/NumeroAleatorio";
 import ComParametro from "./componets/basicos/ComParametro";
 import Primeiro from "./componets/basicos/Primeiro";
 import Card from "./componets/layout/Card";
+import TabelaProdutos from "./componets/repetição/TabelaProdutos";
 
 export default function App(props) {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="cards">
+        <Card titulo="#05 Repetição" >
+          <TabelaProdutos/>
+        </Card>
+        <Card titulo="#05 Repetição" >
+          <ListaAluno/>
+        </Card>
         <Card titulo="#04 Componente com filhos">
           <Familia>
             <FamiliaMembro nome="Gustavo" sobrenome="Ferreira" />
