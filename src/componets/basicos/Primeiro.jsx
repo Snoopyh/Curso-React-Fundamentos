@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function Primeiro (){
+export default function Primeiro(props) {
   const msg = `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-   Facilis velit possimus reprehenderit nesciunt.`
+   Facilis velit possimus reprehenderit nesciunt.`;
   return (
-     <div>
-       <h2> Primeiro Componente mais novo</h2>
-       <p>{msg}</p>
+    <div>
+      <p>{msg}</p>
     </div>
-           )
+  );
 }
