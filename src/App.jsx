@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.css";
 
+import IndiretaPai from "./componets/comunicação/IndiretaPai";
+import DiretaPai from "./componets/comunicação/DiretaPai";
+import UsuarioInfo from "./componets/condicional/UsuarioInfo";
+import ParOuImpar from "./componets/condicional/ParOuImpar";
+import TabelaProdutos from "./componets/repetição/TabelaProdutos";
 import ListaAluno from "./componets/repetição/ListaAluno";
 import Familia from "./componets/basicos/Familia";
 import FamiliaMembro from "./componets/basicos/FamiliaMembro";
@@ -8,28 +13,34 @@ import NumAleatorio from "./componets/basicos/NumeroAleatorio";
 import ComParametro from "./componets/basicos/ComParametro";
 import Primeiro from "./componets/basicos/Primeiro";
 import Card from "./componets/layout/Card";
-import TabelaProdutos from "./componets/repetição/TabelaProdutos";
-import ParOuImpar from "./componets/condicional/ParOuImpar";
 
 export default function App(props) {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="cards">
-        <Card titulo="#07 Renderização Condicional" >
-          <ParOuImpar numero={[21,20,19,28,30,60,80,13,7,5]}/>
+        <Card titulo="#09 Comunicação InDireta">
+          <IndiretaPai/>
         </Card>
-        <Card titulo="#05 Repetição" >
-          <TabelaProdutos/>
+        <Card titulo="#08 Comunicação Direta">
+          <DiretaPai sobrenome="Ferreira Da Silva"/>
         </Card>
-        <Card titulo="#05 Repetição" >
-          <ListaAluno/>
+        <Card titulo="#07 Renderização Condicional">
+          <UsuarioInfo usuario={{ nome: "Fernando" }} />
+          <UsuarioInfo usuario={{ email: "Fer_nando@gmail.com" }} />
+          <ParOuImpar numero={[21, 20, 19, 28, 30, 60, 80, 13, 7, 5]} />
+        </Card>
+        <Card titulo="#05 Repetição">
+          <TabelaProdutos />
+        </Card>
+        <Card titulo="#05 Repetição">
+          <ListaAluno />
         </Card>
         <Card titulo="#04 Componente com filhos">
           <Familia>
-            <FamiliaMembro nome="Gustavo" sobrenome="Ferreira" />
-            <FamiliaMembro nome="Roberto" sobrenome="Ferreira" />
-            <FamiliaMembro nome="Joana" sobrenome="Silva" />
+            <FamiliaMembro nome="Gustavo" />
+            <FamiliaMembro nome="Roberto" />
+            <FamiliaMembro nome="Joana" />
           </Familia>
         </Card>
         <Card titulo="#03 Numero Aleatorio" color="#011f4b ">
