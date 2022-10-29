@@ -1,0 +1,20 @@
+.TabelaProdutos table {
+  margin: auto;
+  width: 100%;
+}
+.TabelaProdutos th {
+  background-color: #011f4b;
+  color: #fff;
+}
+.TabelaProdutos td{
+  color:#333;
+}
+.TabelaProdutos .Escuro{
+  color:#000;
+}
+.TabelaProdutos .Impar {
+  background-color: #c4daeb;
+}
+.TabelaProdutos .Par {
+  background-color: #dde7ee;
+}

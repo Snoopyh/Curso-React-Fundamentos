@@ -28,7 +28,7 @@ export default function App(props) {
             <FamiliaMembro nome="Joana" sobrenome="Silva" />
           </Familia>
         </Card>
-        <Card titulo="#03 Numero Aleatorio" color="#005b96">
+        <Card titulo="#03 Numero Aleatorio" color="#011f4b ">
           <NumAleatorio min={1} max={60} />
           <NumAleatorio min={1} max={60} />
           <NumAleatorio min={1} max={60} />
