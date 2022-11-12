@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+
+import Contador from "./componets/contador/Contador";
 import Input from "./componets/formulario/Input";
 import IndiretaPai from "./componets/comunicação/IndiretaPai";
 import DiretaPai from "./componets/comunicação/DiretaPai";
@@ -20,6 +22,9 @@ export default function App(props) {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="cards">
+        <Card titulo="#11 Contador baseado em class">
+          <Contador numeroInicial={10} />
+        </Card>
         <Card titulo="#10 Componente Controlado">
           <Input/>
         </Card>
