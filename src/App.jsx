@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 
+
 import Contador from "./componets/contador/Contador";
 import Input from "./componets/formulario/Input";
 import IndiretaPai from "./componets/comunicação/IndiretaPai";
